@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #F2DACE;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.container {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #D49A9A;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.profile-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-img-td {
+    width: 160px;
+    vertical-align: middle;
+    padding-right: 25px;
+}
+
+.profile-text-td {
+    vertical-align: middle;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #D49A9A;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+.data-table th {
+    background-color: #D49A9A;
+    color: white;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.skills-table td {
+    padding: 12px 10px;
+}
+
+.skill-name {
+    font-weight: 500;
+    width: 30%;
+}
+
+.skill-rating {
+    width: 20%;
+}
+
+footer {
+    background-color: #D49A9A;
+    color: #fff;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-top: 1px solid #D49A9A;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.contact-heading {
+    color: #fff;
+    border-bottom: none;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-card {
+    background-color: #7C0E44;
+    border: 1px solid #AA5E7A;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+.contact-list a {
+    color: #63b3ed;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+.copyright {
+    text-align: center;
+    color: #fff;
+    font-size: 0.85rem;
+    margin-top: 20px;
+}
+
+section, footer {
+    scroll-margin-top: 70px;
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .card, .profile-section {
+        padding: 15px;
+    }
+
+    .profile-table, .profile-table tbody, .profile-table tr, .profile-table td {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-img-td {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-text-td {
+        padding-left: 0 !important;
+    }
+
+    .data-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .data-table th, .data-table td {
+        padding: 8px;
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    .skills-table {
+        display: table;
+        width: 100%;
+    }
+
+    .skills-table tr {
+        display: table-row;
+    }
+
+    .skills-table td {
+        display: table-cell;
+        padding: 8px 4px;
+        font-size: 14px;
+    }
+
+    .skill-name {
+        width: 60%;
+    }
+
+    .skill-rating {
+        width: 40%;
+    }
+
+    h1, h2, h3 {
+        word-wrap: break-word;
+    }
+
+    .contact-card {
+        padding: 15px;
+    }
+}
